@@ -1,5 +1,6 @@
 export const getContentType = () => ({
   'Content-Type': 'application/json',
+  'Content-Security-Policy': 'upgrade-insecure-requests',
 })
 
 export const errorCatch = (error: any): string =>
