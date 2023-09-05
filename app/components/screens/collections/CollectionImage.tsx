@@ -1,0 +1,15 @@
+import Image from 'next/image'
+import { FC } from 'react'
+
+import { ICollection } from './collections.interface'
+
+const CollectionImage: FC<{ collection: ICollection }> = ({
+  collection: { image, title },
+}) => {
+  return (
+    <span>
+      <Image alt={title} src={image} fill draggable={false} />
+    </span>
+  )
+}
+export default CollectionImage

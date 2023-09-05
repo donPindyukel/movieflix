@@ -9,15 +9,36 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "./app/",
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/components/*": ["components/*"],
+      "@/ui/*": ["components/ui/"],
+      "@/screens/*": ["components/screens/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/shared/*": ["shared/*"],
+      "@/services/*": ["services/*"],
+      "@/utils/*": ["utils/*"],
+      "@/store/*": ["store/*"],
+      "@/config/*": ["config/*"],
+      "@/assets/*": ["assets/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/components/screens/admin/movies/useMovies.ts"
+  ],
   "exclude": ["node_modules"]
 }
