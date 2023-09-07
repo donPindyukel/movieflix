@@ -14,11 +14,11 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://193.124.112.51:4200/api/:path*',
+        destination: 'https://193-124-112-51.sslip.io/api/:path*',
       },
       {
         source: '/uploads/:path*',
-        destination: 'http://193.124.112.51:4200/uploads/:path*',
+        destination: 'https://193-124-112-51.sslip.io/uploads/:path*',
       },
     ]
   },
