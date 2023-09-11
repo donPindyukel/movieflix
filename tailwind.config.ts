@@ -9,6 +9,9 @@ module.exports = {
     './app/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      ms: '1300px',
+    },
     colors: {
       primary,
       black: colors.black,

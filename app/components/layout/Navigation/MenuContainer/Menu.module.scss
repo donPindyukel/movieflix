@@ -1,13 +1,13 @@
 .menu {
-  @apply mb-14 animate-fade;
+  @apply pb-8 animate-fade;
 
   .heading {
-    @apply text-gray-500 uppercase text-sm font-semibold pl-layout;
+    @apply text-gray-500 uppercase text-sm font-semibold px-4 ms:px-layout;
   }
 
   ul {
     > li {
-      @apply px-8 border-r-4 border-r-transparent transition-colors;
+      @apply px-2 ms:px-8 border-r-4 border-r-transparent transition-colors;
 
       > a {
         @apply flex items-center text-gray-600 px-3 mt-6 cursor-pointer;

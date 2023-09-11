@@ -6,7 +6,7 @@ import logoImage from '@/assets/images/logo.svg'
 
 const Logo: FC = () => {
   return (
-    <Link href="/" className="px-layout mb-10 block">
+    <Link href="/" className="pl-2 mb-10 block">
       <Image
         src={logoImage}
         width={247}

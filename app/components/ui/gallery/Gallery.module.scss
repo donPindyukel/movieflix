@@ -18,8 +18,7 @@
   }
 
   &.vertical {
-    @apply mr-4 last:mr-0 w-1/5 h-72;
-    max-width: 200px;
+    @apply mr-4 last:mr-0 w-48 h-72;
   }
 
   &.horizontal {
