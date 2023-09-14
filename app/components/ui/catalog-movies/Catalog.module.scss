@@ -5,12 +5,20 @@
 .movies {
   @apply flex flex-wrap mt-8;
 
+  @media screen and (max-width: 1684px) {
+    @apply justify-center;
+  }
+
   > a {
     @apply mr-8 animate-fade;
   }
 
   > a:nth-child(3n) {
     @apply mr-0;
+
+    @media screen and (max-width: 1684px) {
+      @apply mr-8;
+    }
   }
 }
 

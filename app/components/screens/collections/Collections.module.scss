@@ -6,20 +6,35 @@ $shadow:
   0 3px 3px 0 rgb(0 0 0 / 15%);
 
 .collections {
-  @apply flex flex-wrap items-center mt-10;
+  @apply flex flex-wrap items-center mt-10 ms2:justify-start justify-center;
 
   > a {
-    @apply mr-8 animate-fade;
+    @apply ms2:mr-8 mr-4 animate-fade;
+  }
+
+  > a:nth-child(2n) {
+    @media screen and (max-width: 1614px) {
+      @apply mr-0;
+    }
   }
 
   > a:nth-child(3n) {
     @apply mr-0;
+
+    @media screen and (max-width: 1614px) {
+      @apply mr-4;
+    }
   }
 }
 
 .collection {
   @apply relative flex items-end mb-10 h-44 transition-transform;
   width: 31%;
+  min-width: 280px;
+
+  @media screen and (max-width: 1175px) {
+    min-width: 240px;
+  }
 
   @include fade-bg-gradient(0deg);
   &::before {

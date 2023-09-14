@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     screens: {
       ms: '1300px',
+      ms2: '1685px',
     },
     colors: {
       primary,
