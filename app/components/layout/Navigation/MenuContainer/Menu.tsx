@@ -9,7 +9,11 @@ const DynamicAuthItems = dynamic(() => import('./auth/AuthItems'), {
   ssr: false,
 })
 
-const Menu: FC<{ menu: IMenu }> = ({ menu: { items, title } }) => {
+export interface IMenuProps {
+  menu: IMenu
+}
+
+const Menu: FC<IMenuProps> = ({ menu: { items, title } }) => {
   return (
     <div className={styles.menu}>
       <div className={styles.heading}>{title}</div>

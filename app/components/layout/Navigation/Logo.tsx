@@ -4,9 +4,11 @@ import { FC } from 'react'
 
 import logoImage from '@/assets/images/logo.svg'
 
+import styles from './Logo.module.scss'
+
 const Logo: FC = () => {
   return (
-    <Link href="/" className="pl-2 mb-10 block">
+    <Link href="/" className={styles.logo}>
       <Image
         src={logoImage}
         width={247}

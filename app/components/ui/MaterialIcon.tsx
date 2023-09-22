@@ -5,13 +5,16 @@ import { useRenderClient } from '@/hooks/useRenderClient'
 
 import { TypeMaterialIconName } from '@/shared/types/icon.types'
 
-const MaterialIcon: FC<{ name: TypeMaterialIconName }> = ({ name }) => {
+const MaterialIcon: FC<{ name: TypeMaterialIconName; size?: number }> = ({
+  name,
+  size,
+}) => {
   const { isRenderClient } = useRenderClient()
 
   const IconComponent = MaterialIcons[name]
 
   if (isRenderClient) {
-    return <IconComponent /> || <MaterialIcons.MdDragIndicator />
+    return <IconComponent size={size} /> || <MaterialIcons.MdDragIndicator />
   }
   return null
 }

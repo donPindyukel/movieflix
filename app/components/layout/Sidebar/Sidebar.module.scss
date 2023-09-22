@@ -1,3 +1,9 @@
 .sidebar {
-  @apply p-[1%] ms:p-layout;
+  @apply p-[1%] ms:p-layout pt-4;
+
+  .search {
+    @media screen and (max-width: 864px) {
+      @apply hidden pt-0;
+    }
+  }
 }

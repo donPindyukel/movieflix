@@ -1,0 +1,7 @@
+.logo {
+  @apply pl-2 mb-10 block pt-4;
+
+  @media screen and (max-width: 864px) {
+    @apply mb-0 pt-0;
+  }
+}

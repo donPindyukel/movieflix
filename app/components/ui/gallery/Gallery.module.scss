@@ -13,6 +13,10 @@
   @apply relative transition-transform flex items-end shadow-lg rounded-layout overflow-hidden;
   flex: 0 0 auto;
 
+  @media screen and (max-width: 554px) {
+    min-width: 200px;
+  }
+
   &:hover {
     transform: translateY(-5px);
   }
