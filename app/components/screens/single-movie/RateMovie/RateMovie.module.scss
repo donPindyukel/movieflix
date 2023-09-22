@@ -1,5 +1,6 @@
 .wrapper {
   @apply w-1/2 mx-auto my-10 air-block p-7 text-center;
+  min-width: 250px;
 
   > h3 {
     @apply text-2xl font-semibold;

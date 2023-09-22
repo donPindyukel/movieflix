@@ -25,7 +25,7 @@ const RateMovie: FC<IRateMovie> = ({ id, slug }) => {
       {user ? (
         <>
           {isSended ? (
-            <div className={styles.thanks}>Thanks foe rating!</div>
+            <div className={styles.thanks}>Thanks for rating!</div>
           ) : (
             <StarRating
               name="star-rating"
